@@ -1,0 +1,62 @@
+ img {
+  width: 399px;
+  height: 600px;
+    display: block;
+  margin:auto;
+}
+/*class to make a tex box of a certain width and centered*/
+.text-box
+{
+  text-align: center;
+  margin:auto;
+  width: 500px;
+}
+/*style settings for header and footer*/
+header,footer
+{
+
+  background:#1E1413;
+  color:#ededed;
+  text-align: center;
+   padding-top: 1px;
+   margin: 10px 0px;
+    font-family: Verdana, sans-serif;
+}
+/*specific heights for headings /footer */
+header{
+   height: 110px;
+}
+footer{
+   height: 50px;
+}
+// sets background for bidy of website and font for body
+body{
+  background: #f2f2f2;
+  font-family: 'Times New Roman', serif;
+}
+// sets text sizes for headings and text
+h2{
+  font-size: 30px;
+}
+p{
+  font-size: 16px;
+}
+/* below sets link styles for different states clicked,hover etc*/
+a:link {
+  color:blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color:green;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color:red;
+  text-decoration: underline;
+}
