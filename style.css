@@ -12,6 +12,24 @@
   width: 500px;
 } */
 /*style settings for header and footer*/
+header a:link {
+  color: #ededed;
+  text-decoration: none;
+}
+
+header a:visited {
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header a:active {
+  color: #ededed;
+  text-decoration: underline;
+}
+
 header,
 footer {
   background: #1e1413;
@@ -43,7 +61,7 @@ h2 {
 }
 
 .group p {
-  font-size: 16px;
+  font-size: 20px;
 }
 .group img {
   width: 80%;
@@ -56,7 +74,28 @@ h2 {
   border-style: solid;
   margin-left: 20px;
 }
+.item a:link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
 
+.item a:visited {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.item a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.item a:active {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
 .group {
   margin: auto;
   display: flex;
@@ -74,11 +113,16 @@ header nav ul li a {
   color: #ededed;
   text-decoration: none;
   margin: 0 20px 0 0;
+  font-size: 24px;
 }
 header nav ul {
   display: flex;
   padding-left: 0;
   list-style: none;
+}
+.item ul {
+  list-style: none;
+  font-size: 20px;
 }
 @media all and (min-width: 800px) {
   .group {
@@ -89,8 +133,14 @@ header nav ul {
   .item {
     text-align: left;
   }
+  .item ul {
+    font-size: 24px;
+  }
 }
 @media all and (min-width: 600px) {
+  .group p {
+    font-size: 24px;
+  }
   header {
     display: flex;
     justify-content: space-between;
@@ -99,4 +149,20 @@ header nav ul {
   header nav {
     margin-top: 14px;
   }
+}
+
+form label {
+  display: flex;
+  width: 200%;
+}
+form button {
+  display: flex;
+}
+form input {
+  width: 85%;
+  min-height: 30px;
+}
+form textarea {
+  width: 85%;
+  min-height: 50px;
 }
